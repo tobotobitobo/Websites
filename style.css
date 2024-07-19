@@ -1,0 +1,52 @@
+body
+        {
+            background-image: url("https://t4.ftcdn.net/jpg/02/66/94/57/240_F_266945722_QpXALwxGJ98TXhyN3KXvaUmK1UIFolu4.jpg");   
+        }
+        .center1 
+        {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%,-50%);
+            width: 60%;
+            height: 60%;
+            text-align: center;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMhxWeHORR9LFlI9fk6drcupGHfPkIY2MJag&s");
+        }
+        .menu1, .menu2, .menu3, .menu4, .menu5
+        {
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            left: -20%;
+            background-color: yellow;
+            border-top-left-radius:50%;
+            border-bottom-left-radius: 50%;
+            display: grid;
+            align-items: center;
+            border-color: red;
+            border-width: 20px;
+            
+        }
+        .menu1
+        {
+            top: 0%;
+        }
+        .menu2
+        {
+            top: 20%;
+        }
+        .menu3
+        {
+            top: 40%;
+        }
+        .menu4
+        {
+            top: 60%;
+        }
+        .menu5
+        {
+            top: 80%;
+        }
