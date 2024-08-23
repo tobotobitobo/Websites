@@ -1,0 +1,92 @@
+
+body {
+  background-color: black;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+#back
+{
+  position: fixed;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+}
+#horok
+{
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 20%;
+  z-index: 1;
+}
+
+#alltogether
+{ 
+  gap: 20px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;  
+  z-index: 2;
+}
+
+.game
+{
+  height: 20vh;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  width: max(20vw, 130px);
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+}
+
+.inside
+{
+  display: block;
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
+}
+#metal
+{
+  display: block;
+}
+#niemetal
+{
+  display: block;
+}
+
+@keyframes moving2
+{
+  0%{top: 50%;}
+  49%{left: -100%; top: 50%;}
+  50%{left: -100%; top: 10%;}
+  100%{top: 10%; left: 50%;}
+}
+
+@keyframes back
+{
+  0%{top: 8%;}
+  100%{top: 50%;}
+}
+
+@media(orientation: portrait)
+{
+  #alltogether
+  {
+    flex-direction: column;
+  }
+}
